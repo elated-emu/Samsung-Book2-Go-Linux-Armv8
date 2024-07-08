@@ -73,3 +73,18 @@ Now I want to convert this to DTB so that we can select it in our grub menu. Her
 **DTSI** is a DTS File that includes other DTS modules. We need to grab the other modules before converting them to DTB.
 
 Here is another resource for compiling DTB Files (https://github.com/mykhani/device-tree-guide)
+
+I followed this guide to compile the DTS to with other DTSI modules to DTB (https://stackoverflow.com/questions/50658326/device-tree-compiler-not-recognizes-c-syntax-for-include-files)
+
+The only thing I did was take the Samsung-Book.dts file from hexdump0815 and modified it to include the sc7280.dtsi instead of the sc7180.dtsi file, since I figure these two laptops are close enough.
+I boot up arch with additional argument ``devicetree /dtb/sc7280-samsung-galaxy-book2-go.dtb``
+
+I now get a different result! Not a good one, but it is egging me on. 
+
+
+```
+EFI stub: Using DTB from Configuration Table
+EFI Stub: Exiting Boot services
+```
+
+Followed by a system hang. I think I am on the right track. If anyone knows more information, I am very open to support. Hopefully we can get to playing with arm soon!
