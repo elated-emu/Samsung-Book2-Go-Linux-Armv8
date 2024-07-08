@@ -72,3 +72,4 @@ Now I want to convert this to DTB so that we can select it in our grub menu. Her
 
 **DTSI** is a DTS File that includes other DTS modules. We need to grab the other modules before converting them to DTB.
 
+Here is another resource for compiling DTB Files (https://github.com/mykhani/device-tree-guide)
