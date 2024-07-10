@@ -166,3 +166,21 @@ I still don't know what RPMh is, my best understanding: its a specific part of t
 
 ### What is ldoa10?
 
+Those must be specific modules within the cpu?
+
+## Trying Precompiled DTB files
+I am using the pre-compiled DTB files from the arch project, maybe I will have more success.
+
+| DTB | ISO | Result |
+| --- | -------------- | --------------- |
+| sc7280-crd-r3.dtb | snapdragon_7c_woa-aarch64-bookworm | Lost connection to USB |
+| sc7280-herobrine-crd.dtb | snapdragon_7c_woa-aarch64-bookworm | same as above |
+| sc7280-herobrine-evoker.dtb | snapdragon_7c_woa-aarch64-bookworm | same as above |
+| sc7280-herobrine-herobrine.dtb | snapdragon_7c_woa-aarch64-bookworm | same as above |
+
+I am beginning to think that I need to work on the DTS file and manually add the USB ports.
+
+I think I can get these references from the DSDT.aml or DSDT.dsl files. No clue how to do it though.
+Getting late so i'll get to it tomorrow
+
+
